@@ -9,6 +9,7 @@
 a {
     color: white;
     text-decoration: none;
+    display: block;
 }
 
 ul {
@@ -28,10 +29,24 @@ h1 {
     padding: 10px;
 }
 
+#burguer {
+    background-color: rgb(44, 44, 44);
+    color: wheat;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
 menu {
     background-color: rgb(87, 86, 86);
     text-align: center;
-    display: block;
+    display: none;
 }
 
 menu > ul > li > a {

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        .conteiner {
+            background-color: salmon;
+            display: flex;
+            height: 100px;
+            /* flex-direction: row-reverse;
+            flex-wrap: wrap-reverse; */
+            /* ! short cut */
+            flex-flow: column wrap;
+
+        }
+
+        .item {
+            background-color: lightcyan;
+            border: 1px solid black;
+            text-align: center;
+            flex: auto; /* ? Somente no filho, nao da para usar no pai */
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* Font Awesome cdn Link */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    transition: .2s linear;
+}
+
+body {
+    min-height: 100vh;
+    background: url('../picture/back.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 40px;
+}
+
+.container h3 {
+    font-size: 25px;
+    color: #334;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.password-container span {
+    font-size: 20px;
+    color: #334;
+}
+
+#copy-btn {
+    cursor: pointer;
+    color: #666;
+    font-size: 20px;
+}
+
+#copy-btn:hover {
+    color: #334;
+}
+
+.options .list label {
+    font-size: 16px;
+    color: #666;
+    user-select: none;
+}
+
+.list {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list input[type="checkbox"] {
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    border: 2px solid #334;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.list input[type="checkbox"]:checked {
+    border-radius: 50%;
+    background-color: #334;
+}
+
+.list input[type="number"] {
+    border: 2px solid #334;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 55px;
+}
+
+#generate-btn {
+    margin-top: 10px;
+    background-color: crimson;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#generate-btn:hover {
+    opacity: 0.9;
+}

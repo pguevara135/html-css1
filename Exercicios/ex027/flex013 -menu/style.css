@@ -54,6 +54,11 @@ header nav a:hover {
     transition: 0.6s;
 }
 
+.posicao-botao {
+    display: none;
+    background-color: transparent;
+}
+
 main {
     background-color: whitesmoke;
     margin: 10px;

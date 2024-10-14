@@ -9,10 +9,20 @@
 </head>
 <body>
     <header>
-        <h1>Menu Site</h1>
-        <nav>
+        <div class="mobile">
+            <h1>Menu Site</h1>
+            <div class="mobile-menu-icon">
+                <button class="posicao-botao open" id="open" onclick="menuShow()">
+                    <img src="img/menu_white_36dp.svg" alt="">
+                </button>
+                <button class="posicao-botao" id="close" onclick="menuClose()">
+                    <img src="img/close_white_36dp.svg" alt="">
+                </button>
+            </div>
+        </div>
+        <nav class="nav-item" id="nav-item">
             <a href="#">Opcao 1</a>
-            <a href="">Opcao 2</a>
+            <a href="#">Opcao 2</a>
             <a href="#">Opcao 3</a>
             <a href="#">Opcao 4</a>
             <a href="#">Opcao 5</a>
@@ -24,5 +34,6 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, vitae totam dignissimos asperiores ullam quidem fugit beatae minima dolore corrupti? Ipsum ex modi culpa sapiente vero dolorum incidunt eveniet necessitatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis neque cumque in et tempora laborum, provident aliquid nisi fugit vel voluptatum sint, earum dolore omnis deserunt, quaerat dignissimos distinctio nam.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veritatis voluptatum doloremque! Reprehenderit quis delectus dicta alias sed quam soluta laboriosam dolore optio quae? Enim excepturi quasi beatae porro iste?</p>
     </main>
+    <script src="script.js"></script>
 </body> 
 </html>

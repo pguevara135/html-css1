@@ -2,10 +2,31 @@
 
 header, header > nav {
     flex-flow: column nowrap;
+    margin-top: 5px;
 }
 
-header > h1 {
-    flex-basis: 50px;
+.mobile {
+    width: 90vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 3px;
+}
+
+.open, .close {
+    display: block;
+}
+
+.nav-item {
+    display: none;
+}
+
+.posicao-botao {
+    position: absolute;
+    right: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 header > nav > a {

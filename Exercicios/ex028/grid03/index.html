@@ -9,14 +9,16 @@
             border: 3px solid blue;
             height: 250px;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr; /* 1 fr = 1 fração do espaço disponível */
-            grid-template-rows: repeat(3, auto);
-            /* grid-template: repeat(3, auto) / repeat(3, auto);  substitui as duas linhas acima */
+            /* grid-template-columns: 1fr 1fr 1fr; 1 fr = 1 fração do espaço disponível */
+            /* grid-template-rows: repeat(3, auto); */
+            grid-template: repeat(3, auto) / repeat(3, auto);  /* substitui as duas linhas acima*/
             gap: 10px;
-            align-items: stretch; /* Alinha os itens na linha */
-            justify-items: stretch; /* Alinha os itens na coluna */
-            align-content:normal; /* Alinha o conteúdo na linha */
-            justify-content: normal; /* Alinha o conteúdo na coluna */
+            place-items: start center; /* Alinha os itens no centro da coluna e no início da linha  substitui align e Justify*/
+            place-content: space-between end; /* Alinha o conteúdo no espaço entre os itens na linha e no final da coluna  substitui align e justify content*/
+            /* align-items: stretch;  Alinha os itens na linha
+            justify-items: stretch;  Alinha os itens na coluna
+            align-content:normal;  Alinha o conteúdo na linha
+            justify-content: normal;  Alinha o conteúdo na coluna */
         }
         .item {
             border: 3px solid red;

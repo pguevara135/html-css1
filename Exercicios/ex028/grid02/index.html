@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout na pratica</title>
+    <style>
+        .container {
+            border: 3px solid blue;
+            /* height: 250px; */
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr; /* 1 fr = 1 fração do espaço disponível */
+            grid-auto-columns: 120px;
+            grid-template-rows: repeat(3, 80px);
+            grid-auto-rows: 80px; /* Define a altura automática das linhas */
+            grid-auto-flow: row;
+            /* grid-template: repeat(3, auto) / repeat(3, auto);*/  /* substitui as duas linhas acima*/
+            gap: 10px;
+            place-items: normal normal; /* Alinha os itens no centro da coluna e no início da linha  substitui align e Justify*/
+            place-content: normal normal; /* Alinha o conteúdo no espaço entre os itens na linha e no final da coluna  substitui align e justify content*/
+            /* align-items: stretch;  Alinha os itens na linha
+            justify-items: stretch;  Alinha os itens na coluna
+            align-content:normal;  Alinha o conteúdo na linha
+            justify-content: normal;  Alinha o conteúdo na coluna */
+        }
+        .item {
+            border: 3px solid red;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+</body>
+</html>
